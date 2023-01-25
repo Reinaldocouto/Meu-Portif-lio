@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 1rem;
+  }
+  nav {
+    display: flex;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    margin-right: 1rem;
+  }
+  main {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  #sobre-mim {
+    flex-basis: 100%;
+  }
+  #habilidades {
+    flex-basis: 30%;
+    margin-right: 1rem;
+  }
+  #projetos {
+    flex-basis: 60%;
+  }
