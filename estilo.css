@@ -9,8 +9,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f3f3f3;
     padding: 1rem;
+    position: fixed;
+    background-color: #09090a;
   }
   nav {
     display: flex;
