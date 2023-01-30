@@ -18,7 +18,10 @@ body {
     align-items: center;
     padding: 1rem;
     position: fixed;
-    background-color: #09090a;
+    background-color: #44448a;
+  }
+  .sobre-min{
+    margin-top: 8%;
   }
   nav {
     display: flex;
@@ -38,7 +41,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 50px;
-    margin-top: 20%;
+   
   }
   section {
     width: 100%;
