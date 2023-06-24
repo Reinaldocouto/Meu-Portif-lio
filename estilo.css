@@ -1,81 +1,151 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Cores */
+:root {
+  --cor-primaria: #000;
+  --cor-secundaria: #610725;
+  --cor-terciaria: #ed145b;
 }
 
+/* Estilo global */
 body {
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, sans-serif;
-  }
-  button{
-    padding: 10px;
-  }
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-primaria);
+  color: #fff;
+}
 
-  .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    row-gap: 10px;
-    column-gap: 30px;
-  }
+/* Animações */
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
-  #title{
-    margin-left: 8%;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    
-  }
+@keyframes slide-in {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
 
-  header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    position: fixed;
-    background-color: #44448a;
-  }
-  
-  nav {
-    display: flex;
-  }
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav li {
-    margin-right: 1rem;
-  }
-  main {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 50px;
-   
-  }
-  section {
-    width: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-  #sobre-mim {
-    flex-basis: 100%;
-    margin-top: 6%;
-  }
-  #habilidades {
-    flex-basis: 30%;
-    margin-right: 1rem;
-  }
-  #projetos {
-    flex-basis: 60%;
-  }
+/* Estilo do header */
+header {
+  background-color: var(--cor-secundaria);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: fade-in 1s ease;
+}
+
+#title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--cor-terciaria);
+}
+
+/* Estilo da seção "Sobre Mim" */
+#sobre-mim {
+  padding: 40px;
+  animation: slide-in 1s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: var(--cor-terciaria);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d40e50;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilo da seção "Habilidades" */
+#habilidades {
+  padding: 40px;
+  animation: slide-in 1s ease;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Estilo da seção "Projetos" */
+#projetos {
+  padding: 40px;
+  animation: slide-in 1s ease;
+}
+
+.projeto {
+  margin-bottom: 40px;
+}
+
+.projeto h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.projeto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projeto p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.projeto a {
+  color: var(--cor-terciaria);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.projeto a:hover {
+  color: #c30b48;
+}
+
+/* Estilo da seção "Contato"
