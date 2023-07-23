@@ -7,7 +7,7 @@
 
 /* Estilo global */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   background-color: black;
@@ -19,13 +19,21 @@ body {
 
 /* Animações */
 @keyframes fade-in {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-in {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* Estilo do header */
@@ -72,10 +80,51 @@ nav ul li a:hover {
   transition: border-color 0.3s ease;
 }
 
-.header-button:hover {
-  border-color: var(--cor-terciaria); /* Altera a cor da borda ao passar o mouse */
+/* Estilo da seção "Projetos" */
+#projetos {
+  padding: 40px;
+  animation: slide-in 1s ease;
 }
 
+.projeto {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column; /* Altera o layout para colocar a descrição abaixo do vídeo */
+}
+
+.projeto h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.projeto-container {
+  display: flex;
+  flex-direction: row; /* Mantém o vídeo e a descrição lado a lado */
+  flex-wrap: wrap; /* Faz com que a descrição fique abaixo do vídeo quando o espaço for insuficiente */
+}
+
+.projeto-video {
+  flex: 1; /* Ocupa 1/3 do espaço disponível */
+  margin-right: 20px; /* Espaço entre o vídeo e a descrição */
+  min-width: 300px; /* Define uma largura mínima para o vídeo */
+}
+
+.projeto-descricao {
+  flex: 2; /* Ocupa 2/3 do espaço disponível */
+  min-width: 300px; /* Define uma largura mínima para a descrição */
+  max-width: 800px; /* Define uma largura máxima
+}
+
+.projeto-descricao p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.header-button:hover {
+  border-color: var(
+    --cor-terciaria
+  ); /* Altera a cor da borda ao passar o mouse */
+}
 
 /* Estilos para a barra de rolagem */
 ::-webkit-scrollbar {
@@ -159,9 +208,8 @@ p {
 }
 
 .linkedin-button:hover {
-  background-color: #0A66C2;
+  background-color: #0a66c2;
 }
-
 
 /* Estilo do botão do GitHub com ícone */
 .github-button {
@@ -189,7 +237,6 @@ p {
 .github-button:hover {
   background-color: #c30b48;
 }
-
 
 /* Estilo da seção "Habilidades" */
 #habilidades {
