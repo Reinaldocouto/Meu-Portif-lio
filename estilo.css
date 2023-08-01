@@ -15,6 +15,7 @@ body {
   background-size: contain; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
   background-repeat: no-repeat; /* Evita que a imagem seja repetida */
   color: #fff;
+  flex: 
 }
 
 /* Animações */
@@ -95,12 +96,14 @@ nav ul li a:hover {
 .projeto h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  flex-column: 2;
 }
 
 .projeto-container {
   display: flex;
   flex-direction: row; /* Mantém o vídeo e a descrição lado a lado */
   flex-wrap: wrap; /* Faz com que a descrição fique abaixo do vídeo quando o espaço for insuficiente */
+  box-sizing: border-box;
 }
 
 .projeto-video {
@@ -112,7 +115,7 @@ nav ul li a:hover {
 .projeto-descricao {
   flex: 2; /* Ocupa 2/3 do espaço disponível */
   min-width: 300px; /* Define uma largura mínima para a descrição */
-  max-width: 800px; /* Define uma largura máxima
+  max-width: 600px; /* Define uma largura máxima*/
 }
 
 .projeto-descricao p {
@@ -259,10 +262,15 @@ li {
 #projetos {
   padding: 40px;
   animation: slide-in 1s ease;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os projetos sejam colocados abaixo um do outro quando o espaço é insuficiente */
 }
 
 .projeto {
   margin-bottom: 40px;
+  flex: 1; /* Ocupa 50% do espaço disponível, criando duas colunas lado a lado */
+  min-width: 300px; /* Define uma largura mínima para cada projeto */
+  box-sizing: border-box;
 }
 
 .projeto h3 {
@@ -289,6 +297,7 @@ li {
 .projeto a:hover {
   color: #c30b48;
 }
+
 
 /* Estilo da seção "Contato" */
 #contato {
