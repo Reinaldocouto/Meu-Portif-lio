@@ -258,45 +258,6 @@ li {
   margin-bottom: 5px;
 }
 
-/* Estilo da seção "Projetos" */
-#projetos {
-  padding: 40px;
-  animation: slide-in 1s ease;
-  display: flex;
-  flex-wrap: wrap; /* Permite que os projetos sejam colocados abaixo um do outro quando o espaço é insuficiente */
-}
-
-.projeto {
-  margin-bottom: 40px;
-  flex: 1; /* Ocupa 50% do espaço disponível, criando duas colunas lado a lado */
-  min-width: 300px; /* Define uma largura mínima para cada projeto */
-  box-sizing: border-box;
-}
-
-.projeto h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.projeto img {
-  max-width: 100%;
-  height: auto;
-}
-
-.projeto p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.projeto a {
-  color: var(--cor-terciaria);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.projeto a:hover {
-  color: #c30b48;
-}
 
 
 /* Estilo da seção "Contato" */
