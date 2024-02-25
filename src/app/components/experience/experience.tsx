@@ -6,7 +6,7 @@ import { Skill } from "../skill/skill"
 export function Experience(){
     return(
         <div className="experience">
-          <SectionTitle text="Experience"/>
+          <SectionTitle text="Experiência"/>
           <p>Desenvolvedor experiente com histórico em projetos acadêmicos e colaborações na Faculdade FIAP. 
             Especializado em desenvolvimento web, mobile e desktop, 
             comprometido em oferecer soluções eficientes e inovadoras para atender 
