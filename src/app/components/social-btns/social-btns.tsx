@@ -8,7 +8,7 @@ import "./social-btns.scss"
 export function SocialBtns(){
     return(
         <div className="social">
-            <a href="https://www.vagas.com.br/servicos/curriculo">
+            <a href='https://api.whatsapp.com/send?phone=5511995384270' target='_blank'><i></i> W.App>
             </a>
             <a href="https://www.linkedin.com/in/reinaldocouto/">
                 <LinkedInIcon/>
